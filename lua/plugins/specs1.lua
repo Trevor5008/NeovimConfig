@@ -15,7 +15,7 @@ return {
     },
     {
         "folke/noice.nvim",
-        even = "VeryLazy",
+        event = "VeryLazy",
         opts = {},
         dependencies = {
             "MunifTanjim/nui.nvim",
@@ -33,22 +33,6 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-            })
-        end
-    },
-    {
-        "neovim/nvim-lspconfig",
-        config = function()
-            local lspconfig = require("lspconfig")
-
-            lspconfig.tsserver.setup({})
-
-            lspconfig.lua_ls.setup({
-                settings = {
-                    Lua = {
-                        diagnostics = { globals = { "vim" } },
-                    },
-                },
             })
         end
     },
