@@ -28,3 +28,6 @@ vim.opt.foldenable = true -- Allow folding
 -- Keybindings
 vim.api.nvim_set_keymap("n", "zR", ":lua vim.opt.foldlevel=99<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "zM", "zm", { noremap = true, silent = true })
+
+-- Highlight search
+vim.opt.hlsearch = false
